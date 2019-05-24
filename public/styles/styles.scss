@@ -25,6 +25,15 @@ align-content: flex-start;
 align-items: flex-start;
 background-size: cover;
 
+&__tabla{
+    margin-left: 8em;
+
+    &__titulo{
+        margin-top: 0px;
+        font-family: 'Muli', sans-serif; 
+    }
+}
+
 
 &__img{
     margin-top: 30px;
@@ -137,6 +146,32 @@ align-items: flex-start;
         text-align: left;
         font-family: 'Muli', sans-serif; 
     }
+}
+
+
+&__informacion-admin{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items:center;
+    align-content: center;
+ 
+    width: 30%;
+    height: 5%;
+  
+    justify-content: center;
+
+    &__titulo{
+        display: flex;
+        font-family: 'Sacramento', cursive;
+        color: #EE1355;
+        font-size: 65px;
+        text-align: left; 
+        align-self: center;
+        justify-items: center;
+    }
+   
 }
 
 }

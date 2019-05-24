@@ -22,12 +22,13 @@
     
 </ul>
 
-<div class="app__informacion-hijo">  
-    <h1 class="app__informacion-hijo__titulo">{{titulo}}</h1>
+<div class="app__informacion-admin">  
+    <h1 class="app__informacion-admin__titulo">{{titulo}}</h1>
      </div>
-  
-    <h2>General Visits:</h2>
-    <table class="general">
+
+  <div class="app__tabla">
+    <h2 class="app__tabla__titulo">General visits</h2>
+    <table class="app__tabla_">
         <tr>
             <td>Name</td>
             <td>Visits</td>
@@ -43,7 +44,7 @@
         </tr>
          {{/each}}
     </table>
-
+  </div>
     <br>
     <h2>Specific visits</h2>
     <table class="registro">

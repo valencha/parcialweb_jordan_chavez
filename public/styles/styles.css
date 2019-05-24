@@ -36,6 +36,15 @@ html {
   background-size: cover;
 }
 
+.app__tabla {
+  margin-left: 8em;
+}
+
+.app__tabla__titulo {
+  margin-top: 0px;
+  font-family: 'Muli', sans-serif;
+}
+
 .app__img {
   margin-top: 30px;
   width: 400px;
@@ -182,5 +191,42 @@ html {
   font-size: 18px;
   text-align: left;
   font-family: 'Muli', sans-serif;
+}
+
+.app__informacion-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 30%;
+  height: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__informacion-admin__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Sacramento', cursive;
+  color: #EE1355;
+  font-size: 65px;
+  text-align: left;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

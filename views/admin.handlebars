@@ -11,7 +11,44 @@
     <h1>{{titulo}}</h1>
      <p>{{descripcion}}</p>
 
-        <a href="/admin"></a>
+       <h1>Informacion del usuario</h1>
+
+    <h2>General:</h2>
+    <table class="general">
+        <tr>
+            <td>Nombre</td>
+            <td>Visitas</td>
+            <td>Ultima entrada</td>
+            <td>Hora</td>
+        </tr>
+        {{#each visitas.general}}
+        <tr>
+            <td>{{url}}</td>
+            <td>{{visitas}}</td>
+            <td>{{fecha}}</td>
+            <td>{{hora}}</td>
+        </tr>
+         {{/each}}
+    </table>
+
+    <br>
+    <h2>Registro:</h2>
+    <table class="registro">
+        <tr>
+            <td>Nombre</td>
+            <td>Visitas</td>
+            <td>Ultima entrada</td>
+            <td>Hora</td>
+        </tr>
+        {{#each visitas.registro}}
+        <tr>
+            <td>{{url}}</td>
+            <td>{{visitas}}</td>
+            <td>{{fecha}}</td>
+            <td>{{hora}}</td>
+        </tr>
+         {{/each}}
+    </table>
 
 
         <a href="/">Home</a>

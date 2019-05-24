@@ -98,7 +98,7 @@ app.get('/admin', function(request, response){
     var contexto = {
         titulo: 'Admin',
         descripcion:'Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit malesuada, magnis fames ridiculus laoreet sollicitudin ad enim duis arcu, ',
-        fondo:'/images/makeup.png',
+        fondo:'/images/adminfondo.png',
         layout:false,
         visitas: visitas 
 

@@ -23,6 +23,13 @@ height: 100%;
 justify-content: flex-start;
 align-content: flex-start;
 align-items: flex-start;
+background-size: cover;
+
+
+&__img{
+    margin-top: 30px;
+    width: 400px;
+}
 
 
 &__nav{
@@ -34,28 +41,102 @@ width: 100%;
 height: 10%;
 justify-content: space-evenly;
 align-items: flex-start;
-background: rebeccapurple;
+
   
 
 }
 
 &__navbar1{
-    padding: 20px;
+    padding: 1em;
     display: flex;
     flex-direction: row;
     height: auto;
     width: 100%;
+    font-size: 20px;
+    background-color: white;
+    justify-content: space-around;
     
 
 }
 
 &__navlinks{
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: 'Muli', sans-serif; 
     margin-right: 50px;
     text-decoration: none;
-    color: coral;
+    color: #6E6E6E;
     
+}
+
+&__navlinks-active{
+    font-size: 18px;
+    font-family: 'Muli', sans-serif; 
+    margin-right: 50px;
+    text-decoration: none;
+    color: #EE1355;
+    
+}
+&__informacion{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items: center;
+    align-content: center;
+    width: 30%;
+    height: 10%;
+    margin-top: 30vh;
+    justify-content: center;
+
+    &__titulo{
+        display: flex;
+        font-family: 'Sacramento', cursive;
+        color: #6E6E6E;
+        font-size: 95px;
+        text-align: center; 
+        align-self: center;
+        justify-items: center;
+    }
+
+   
+
+
+    &__texto{
+        margin-top: 1em;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Muli', sans-serif; 
+    }
+    
+}
+
+&__informacion-hijo{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    flex-basis: 30%;
+    align-items:flex-start;
+    align-content: flex-start;
+    margin-left: 4em;
+    width: 30%;
+    height: 10%;
+    justify-content: flex-start;
+
+    &__titulo{
+        display: flex;
+        font-family: 'Sacramento', cursive;
+        color: #EE1355;
+        font-size: 65px;
+        text-align: left; 
+        align-self: flex-start;
+        justify-items: flex-start;
+    }
+    &__texto{
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: left;
+        font-family: 'Muli', sans-serif; 
+    }
 }
 
 }

@@ -90,7 +90,7 @@ app.get('/', function(request, response){
         
 
     }
-    registrarVisita("inicio");
+    registrarVisita("home");
     response.render('home', contexto);
 });
 app.get('/admin', function(request, response){   

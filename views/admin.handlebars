@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-image: url('{{fondo}}')">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,12 +31,12 @@
     <table class="app__tabla__contenido">
         <tr >
             <th>Name</th>
-            <th>Visits</th>
+            <th>Total visits</th>
             <th>Last entry</th>
             <th>Hour</th>
         </tr>
         {{#each visitas.general}}
-        <tr class="app__tabla__hijos">
+        <tr>
             <td>{{url}}</td>
             <td>{{visitas}}</td>
             <td>{{fecha}}</td>
@@ -46,13 +46,15 @@
     </table>
   </div>
     <br>
-    <h2>Specific visits</h2>
-    <table class="registro">
+
+     <div class="app__tabla">
+    <h2  class="app__tabla__titulo">Specific visits</h2>
+    <table class="app__tabla__contenido">
         <tr>
-            <td>Name</td>
-            <td>Visits</td>
-            <td>Last entry</td>
-            <td>Hour</td>
+            <th>Name</th>
+            <th>Num visits</th>
+            <th>Last entry</th>
+            <th>Hour</th>
         </tr>
         {{#each visitas.registro}}
         <tr>
@@ -63,7 +65,7 @@
         </tr>
          {{/each}}
     </table>
-
+</div>
 
   
 

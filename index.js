@@ -83,7 +83,9 @@ function registrarVisita(url) {
 app.get('/', function(request, response){   
    
     var contexto = {
-        titulo: 'Pagina principal',
+        titulo: 'Make up',
+        descripcion:'Try this new  brand of makeup, you won’t be dissapointed',
+        fondo:'/images/makeup.png',
         layout:false,
         
 
@@ -96,6 +98,7 @@ app.get('/admin', function(request, response){
     var contexto = {
         titulo: 'Admin',
         descripcion:'Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit malesuada, magnis fames ridiculus laoreet sollicitudin ad enim duis arcu, ',
+        fondo:'/images/makeup.png',
         layout:false,
         visitas: visitas 
 
@@ -103,43 +106,49 @@ app.get('/admin', function(request, response){
     response.render('admin', contexto);
 });
 
-app.get('/paguno', function(request, response){   
+app.get('/face', function(request, response){   
   
 
     var contexto = {
-        titulo: 'Página Uno',
+        titulo: 'Powder',
         descripcion: 'Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit malesuada, magnis fames ridiculus laoreet sollicitudin ad enim duis arcu, ',
+        fondo:'/images/fondomake.png',
+        imagen: '/images/polvos.png',
         layout:false
 
     }
-    registrarVisita("pagouno");
-    response.render('paguno', contexto);
+    registrarVisita("face");
+    response.render('face', contexto);
 });
 
 
-app.get('/pagdos', function(request, response){   
+app.get('/lips', function(request, response){   
     
     var contexto = {
-        titulo: 'Página Dos',
+        titulo: 'Lip Gloss',
         descripcion: 'Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit malesuada, magnis fames ridiculus laoreet sollicitudin ad enim duis arcu, ',
+        fondo:'/images/fondomake.png',
+        imagen: '/images/lips.png',
         layout:false
 
     }
-    registrarVisita("pagodos");
-    response.render('pagdos', contexto);
+    registrarVisita("lips");
+    response.render('lips', contexto);
 });
 
-app.get('/pagtres', function(request, response){   
+app.get('/eyes', function(request, response){   
 
     
     var contexto = {
-        titulo: 'Página Tres',
+        titulo: 'Mask',
         descripcion: 'Lorem ipsum dolor sit amet consectetur adipiscing elit hendrerit malesuada, magnis fames ridiculus laoreet sollicitudin ad enim duis arcu, ',
+        fondo:'/images/fondomake.png',
+        imagen: '/images/mascara.png',
         layout:false
 
     }
-    registrarVisita("pagotres");
-    response.render('pagtres', contexto);
+    registrarVisita("eyes");
+    response.render('eyes', contexto);
 });
 
 app.listen(4000);

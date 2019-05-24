@@ -28,15 +28,15 @@
 
   <div class="app__tabla">
     <h2 class="app__tabla__titulo">General visits</h2>
-    <table class="app__tabla_">
-        <tr>
-            <td>Name</td>
-            <td>Visits</td>
-            <td>Last entry</td>
-            <td>Hour</td>
+    <table class="app__tabla__contenido">
+        <tr >
+            <th>Name</th>
+            <th>Visits</th>
+            <th>Last entry</th>
+            <th>Hour</th>
         </tr>
         {{#each visitas.general}}
-        <tr>
+        <tr class="app__tabla__hijos">
             <td>{{url}}</td>
             <td>{{visitas}}</td>
             <td>{{fecha}}</td>

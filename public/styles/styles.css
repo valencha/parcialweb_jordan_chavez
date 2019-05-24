@@ -45,6 +45,29 @@ html {
   font-family: 'Muli', sans-serif;
 }
 
+.app__tabla tr {
+  background-color: white;
+  width: 50px;
+}
+
+.app__tabla th {
+  margin-top: 1em;
+  font-family: 'Muli', sans-serif;
+  padding-right: 10px;
+  width: 150px;
+  color: coral;
+}
+
+.app__tabla td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.app__tabla tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 .app__img {
   margin-top: 30px;
   width: 400px;
@@ -211,7 +234,6 @@ html {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 30%;
-  height: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

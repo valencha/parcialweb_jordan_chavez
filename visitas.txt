@@ -1,1 +1,1 @@
-{"general":[{}]}
+{"general":[{"url":"inicio","visitas":2,"fecha":"23/4/2019","hora":"22:13"},{"url":"face","visitas":1,"fecha":"23/4/2019","hora":"22:17"}],"registro":[{"url":"inicio","visitas":2,"fecha":"23/4/2019","hora":"22:13"},{"url":"inicio","visitas":2,"fecha":"23/4/2019","hora":"22:16"},{"url":"face","visitas":1,"fecha":"23/4/2019","hora":"22:17"}]}
